@@ -10,7 +10,7 @@ import { useState } from 'react';
 const App = () => {
   const [timers, setTimers] = useState([
     {
-      time: 30000,
+      time: 3000,
       createdAt: '10/5/2022 9:38:59',
     },
   ]);

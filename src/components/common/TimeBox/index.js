@@ -20,7 +20,7 @@ const TimeBox = ({ time, createdAt, id }) => {
     ref.current = setInterval(() => {
       setCurrentTime((prev) => {
         if (prev > 0) {
-          return prev - 10;
+          return prev - 1;
         } else {
           clearInterval(ref.current);
           boxRef.current.remove();

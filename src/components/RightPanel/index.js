@@ -28,7 +28,7 @@ const RightPanel = ({ addTimer }) => {
     <form className={classes['right-panel']} onSubmit={add}>
       <h5>New Timer</h5>
       <Input
-        time={time}
+        value={time}
         onchangeHandler={onchangeHandler}
         type='number'
         isRequired={true}
