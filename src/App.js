@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import LeftPanel from './components/LeftPanel';
+import RightPanel from './components/RightPanel';
+import classes from './App.module.css';
+import { useState } from 'react';
 
-function App() {
+/**
+ * This function contains main app 
+ * @returns {React.Component} App
+ */
+const App = () => {
+  const [timers, setTimers] = useState([
+    {
+      time: 30000,
+      createdAt: '10/5/2022 9:38:59',
+    },
+  ]);
+  const addTimer = (timeObject) => {
+    const currentTimers = [...timers, timeObject];
+    setTimers(currentTimers);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.container}>
+      <LeftPanel timers={timers} />
+      <RightPanel addTimer={addTimer} />
     </div>
   );
-}
+};
 
 export default App;

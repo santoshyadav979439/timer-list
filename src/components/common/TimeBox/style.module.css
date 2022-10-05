@@ -1,0 +1,20 @@
+.time-box {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5px;
+  background-color: rgb(243, 243, 243);
+  padding: 7px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 180px;
+}
+span {
+  display: block;
+}
+.cross {
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+}

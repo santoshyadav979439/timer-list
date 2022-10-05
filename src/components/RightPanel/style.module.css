@@ -1,0 +1,20 @@
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+.input {
+  width: 200px;
+  height: 35px;
+  display: block;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid black;
+  outline: none;
+}
+button {
+  display: block;
+  height: 35px;
+  width: 207px;
+  outline: none;
+  border: 1px;
+}
