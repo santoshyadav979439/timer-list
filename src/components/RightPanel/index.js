@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import Input from '../common/Input';
 import classes from './style.module.css';
 
 /**
@@ -25,12 +26,12 @@ const RightPanel = ({ addTimer }) => {
   };
   return (
     <form className={classes['right-panel']} onSubmit={add}>
-      <input
-        className={classes.input}
-        value={time}
-        onChange={onchangeHandler}
+      <h5>New Timer</h5>
+      <Input
+        time={time}
+        onchangeHandler={onchangeHandler}
         type='number'
-        required
+        isRequired={true}
       />
       <button>Add</button>
     </form>

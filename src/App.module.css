@@ -1,6 +1,7 @@
 .container {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
   grid-gap: 30px;
+  position: relative;
 }
